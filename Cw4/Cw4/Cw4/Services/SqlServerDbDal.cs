@@ -1,11 +1,8 @@
 ﻿using Cw4.Model;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cw4.Services
 {
@@ -13,19 +10,14 @@ namespace Cw4.Services
     {
         private const string ConString = "Data Source=FRONCZ\\SQLEXPRESS;Initial Catalog=s17476;Integrated Security=True";
 
+        //get all students
         public string GetStudents()
         {
-
-
-            
-
-
             var students = new List<Student>();
             using (SqlConnection con = new SqlConnection(ConString))
             using (SqlCommand com = new SqlCommand())
             {
                 com.Connection = con;
-
                 com.CommandText = "Select ST.FirstName, ST.LastName, ST.BirthDate, SU.Name, EN.Semester " +
                        "from Student ST " +
                        "inner join Enrollment EN on ST.IdEnrollment = EN.IdEnrollment " +
@@ -48,13 +40,9 @@ namespace Cw4.Services
                                 Name = dr["Name"].ToString()
                             }
                         }
-
                     });
-                    
                 }
             }
-
-
             return JsonConvert.SerializeObject(students,
                             Newtonsoft.Json.Formatting.None,
                             //skips null and zero properties
@@ -64,9 +52,7 @@ namespace Cw4.Services
                             });
         }
 
-
-
-
+        //get choosen student
         public string GetStudent(string id)
         {
             using (SqlConnection con = new SqlConnection(ConString))
@@ -74,12 +60,13 @@ namespace Cw4.Services
             {
                 com.Connection = con;
 
+                //in the case of concatenation it is easy to use SQLInjection attack
                 com.CommandText = "Select EN.Semester, EN.StartDate, SU.Name " +
                     "from Student ST " +
                     "inner join Enrollment EN on ST.IdEnrollment = EN.IdEnrollment " +
                     "inner join Studies SU on EN.IdStudy = SU.IdStudy " +
-                    "where ST.IndexNumber like '" + id + "'";
-
+                    "where ST.IndexNumber=@id";
+                com.Parameters.AddWithValue("id", id);
 
                 con.Open();
                 SqlDataReader dr = com.ExecuteReader();
@@ -101,7 +88,6 @@ namespace Cw4.Services
                                 //skips null and zero properties
                                 NullValueHandling = NullValueHandling.Ignore
                             });
-
                 }
             }
             return null;

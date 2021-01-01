@@ -9,17 +9,7 @@ namespace Cw4.Services
 {
     public class SqlServerDbDal : IStudentDal
     {
-        // Connection string for user with SELECT, UPDATE and INSERT premission
-        private const string ConString =
-            "Data Source=ds-mssql.database.windows.net;" +
-            "Initial Catalog=s17476;" +
-            "User ID=ReadOnlyUser;" +
-            "Password=ReadOnly2021;" +
-            "Connect Timeout=60;" +
-            "Encrypt=True;" +
-            "TrustServerCertificate=False;" +
-            "ApplicationIntent=ReadWrite;" +
-            "MultiSubnetFailover=False";
+        private const string ConString = "Data Source=FRONCZ\\SQLEXPRESS;Initial Catalog=s17476;Integrated Security=True";
 
         public IEnumerable<Student> GetStudents()
         {
@@ -28,19 +18,31 @@ namespace Cw4.Services
             using (SqlCommand com = new SqlCommand())
             {
                 com.Connection = con;
-                com.CommandText = "Select * from Student";
+                com.CommandText = "Select ST.FirstName, ST.LastName, ST.BirthDate, SU.Name, EN.Semester " +
+                    "from Student ST " +
+                    "inner join Enrollment EN on ST.IdEnrollment = EN.IdEnrollment " +
+                    "inner join Studies SU on EN.IdStudy = SU.IdStudy";
 
                 con.Open();
                 SqlDataReader dr = com.ExecuteReader();
                 while (dr.Read())
                 {
-                    var st = new Student();
-                    st.indexNumber = dr["IndexNumber"].ToString();
-                    st.FirstName = dr["FirstName"].ToString();
-                    st.LastName = dr["LastName"].ToString();
-                    st.BirtDate = DateTime.Parse(dr["BirthDate"].ToString());
-                    st.IdEnrollment = Int32.Parse(dr["IdEnrollment"].ToString());
-                    students.Add(st);
+                    students.Add(new Student
+                    {
+                        FirstName = dr["FirstName"].ToString(),
+                        LastName = dr["LastName"].ToString(),
+                        BirtDate = DateTime.Parse(dr["BirthDate"].ToString()).ToString("dd/MM/yyyy"),
+                        IdEnrollment = new Enrollment
+                        {
+                            Semester = Int32.Parse(dr["Semester"].ToString()),
+                            IdStudies = new Studies
+                            {
+                                Name = dr["Name"].ToString()
+                            }
+                        }
+
+                    });
+                    
                 }
             }
 

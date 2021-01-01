@@ -5,6 +5,7 @@ namespace Cw4.Services
 {
     public interface IStudentDal
     {
-        public IEnumerable<Student> GetStudents();
+        public string GetStudents();
+        public string GetStudent(string id);
     }
 }

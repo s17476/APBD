@@ -8,12 +8,10 @@ namespace Cw4.Model
 {
     public class Enrollment
     {
-        [JsonIgnore]
-        public int IdEnrollment { get; set; }
-        public int Semester { get; set; }
+        public int? IdEnrollment { get; set; }
+        public int? Semester { get; set; }
         [JsonPropertyName("Studies")]
         public Studies IdStudies { get; set; }
-        [JsonIgnore]
         public string StartDate { get; set; }
     }
 }

@@ -18,5 +18,11 @@ namespace Cw4.Controllers
         {
             return Ok(_service.GetStudents());
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetStudentsByIndex(string id)
+        {
+        return Ok(_service.GetStudent(id));
+        }
     }
 }

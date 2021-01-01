@@ -5,7 +5,6 @@ namespace Cw4.Model
 {
     public class Student
     {
-        [JsonIgnore]
         public string IndexNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

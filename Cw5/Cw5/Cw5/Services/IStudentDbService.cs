@@ -1,6 +1,6 @@
-﻿using Cw5.Controllers;
-using Cw5.DTO.Requests;
-using Microsoft.AspNetCore.Mvc;
+﻿using Cw5.DTO.Requests;
+using Cw5.DTO.Responses;
+
 
 namespace Cw5.Services
 {
@@ -8,7 +8,7 @@ namespace Cw5.Services
     {
         public string GetStudents();
         public string GetStudent(string id);
-        public IActionResult AddStudent(EnrollStudentRequest request, EnrollmentsController enroll);
-        public IActionResult Promote(EnrollPromotionRequest request, EnrollmentsController enroll);
+        public EnrollEnrollmentResponse AddStudent(EnrollStudentRequest request);
+        public EnrollEnrollmentResponse Promote(EnrollPromotionRequest request);
     }
 }

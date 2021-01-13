@@ -1,13 +1,14 @@
 ﻿using Cw5.Controllers;
 using Cw5.DTO.Requests;
 using Cw5.DTO.Responses;
+using Cw5.Exceptions;
 using Cw5.Models;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+
 
 namespace Cw5.Services
 {
@@ -100,9 +101,8 @@ namespace Cw5.Services
         }
 
         // add new student
-        public IActionResult AddStudent(EnrollStudentRequest request, EnrollmentsController enroll)
+        public EnrollEnrollmentResponse AddStudent(EnrollStudentRequest request)
         {
-            var _enroll = enroll;
 
             using (SqlConnection con = new SqlConnection(ConString))
             using (SqlCommand com = new SqlCommand())
@@ -130,8 +130,7 @@ namespace Cw5.Services
                     if (!dr.Read())
                     {
                         dr.Close();
-                        transaction.Rollback();
-                        return _enroll.BadRequest("Studies doesn't exist");
+                        throw new NotFoundException("Studies doesn't exist");
                     }
 
                     idStudies = (int)dr["IdStudy"];
@@ -172,8 +171,7 @@ namespace Cw5.Services
                     if (dr.Read())
                     {
                         dr.Close();
-                        transaction.Rollback();
-                        return _enroll.BadRequest("Student with given index number alleready exists");
+                        throw new Exception("Student with given index number alleready exists");
                     }
                     dr.Close();
 
@@ -201,21 +199,19 @@ namespace Cw5.Services
 
                     //commit changes and return result
                     transaction.Commit();
-                    return _enroll.Created("", newEnrollment);
-                }catch(SqlException sql)
-                {
-                    
+                    return newEnrollment;
+                }catch
+                {  
                     transaction.Rollback();
-                    return _enroll.Problem(sql.Message);
+                    throw;
                 }
             }
 
             
         }
 
-        public IActionResult Promote(EnrollPromotionRequest request, EnrollmentsController enroll)
+        public EnrollEnrollmentResponse Promote(EnrollPromotionRequest request)
         {
-            var _enroll = enroll;
 
             //used stored procedure code can be found in the file: ./SQL/PromoteStudents.sql 
             using (SqlConnection con = new SqlConnection(ConString))
@@ -243,11 +239,11 @@ namespace Cw5.Services
                     }
                     dr.Close();
 
-                    return _enroll.Created("", newEnrollment);
+                    return newEnrollment;
                 }
                 catch (SqlException sql)
                 {
-                    return _enroll.NotFound(sql.Message);
+                    throw new NotFoundException(sql.Message);
                 }
             }
         }

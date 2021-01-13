@@ -1,10 +1,5 @@
 ﻿using Cw5.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cw5.Controllers
 {
@@ -17,6 +12,7 @@ namespace Cw5.Controllers
         {
             _service = DbService;
         }
+
         [HttpGet]
         public IActionResult GetStudents()
         {

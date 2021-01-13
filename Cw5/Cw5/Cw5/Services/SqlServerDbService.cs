@@ -8,13 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cw5.Services
 {
-    public class SqlServerStudentDbService: IStudentDbService
+    public class SqlServerDbService: IStudentDbService
     {
+        //SQL EXPRESS runnunig on localhost
         private const string ConString = "Data Source=FRONCZ\\SQLEXPRESS;Initial Catalog=s17476;Integrated Security=True";
 
         //get all students
@@ -59,7 +58,7 @@ namespace Cw5.Services
                             });
         }
 
-        //get choosen student
+        //get student by Id
         public string GetStudent(string id)
         {
             using (SqlConnection con = new SqlConnection(ConString))
@@ -100,6 +99,7 @@ namespace Cw5.Services
             return null;
         }
 
+        // add new student
         public IActionResult AddStudent(EnrollStudentRequest request, EnrollmentsController enroll)
         {
             var _enroll = enroll;
@@ -107,12 +107,10 @@ namespace Cw5.Services
             using (SqlConnection con = new SqlConnection(ConString))
             using (SqlCommand com = new SqlCommand())
             {
-                
                     com.Connection = con;
 
                     com.CommandText = "select * from studies where name=@name";
                     com.Parameters.AddWithValue("name", request.Studies);
-
 
                     con.Open();
 
@@ -127,6 +125,7 @@ namespace Cw5.Services
                 try
                 {
                     dr = com.ExecuteReader();
+
                     //studies doesn't exist
                     if (!dr.Read())
                     {
@@ -165,6 +164,7 @@ namespace Cw5.Services
                         idEnrollment = (int)dr["id"];
                     }
                     dr.Close();
+
                     //check if given IndexNumber is unique
                     com.CommandText = "select * from Student where IndexNumber=@indexNumber";
                     com.Parameters.AddWithValue("indexNumber", request.IndexNumber);
@@ -176,6 +176,7 @@ namespace Cw5.Services
                         return _enroll.BadRequest("Student with given index number alleready exists");
                     }
                     dr.Close();
+
                     //add new student
                     com.CommandText = "insert into student (IndexNumber, FirstName, LastName, BirthDate, IdEnrollment) " +
                         "values (@IndexNumber, @FirstName, @LastName, @BirthDate, @idEnroll)";
@@ -185,7 +186,6 @@ namespace Cw5.Services
                     com.Parameters.AddWithValue("BirthDate", request.BirthDate);
                     com.ExecuteNonQuery();
 
-                    
                     //get enrollment from DB
                     com.CommandText = "select * from Enrollment where IdEnrollment=@idEnroll";
                     dr = com.ExecuteReader();
@@ -217,8 +217,7 @@ namespace Cw5.Services
         {
             var _enroll = enroll;
 
-            //using stored procedure
-            //The procedure code can be found in the file: ./SQL/PromoteStudents.sql 
+            //used stored procedure code can be found in the file: ./SQL/PromoteStudents.sql 
             using (SqlConnection con = new SqlConnection(ConString))
             using (SqlCommand com = new SqlCommand("PromoteStudents", con))
             {

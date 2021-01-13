@@ -1,13 +1,6 @@
 ﻿using Cw5.DTO.Requests;
-using Cw5.Models;
 using Cw5.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cw5.Controllers
 {

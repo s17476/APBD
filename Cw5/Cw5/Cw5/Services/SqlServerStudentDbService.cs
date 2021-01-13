@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
@@ -211,5 +212,46 @@ namespace Cw5.Services
 
             
         }
+
+        public IActionResult Promote(EnrollPromotionRequest request, EnrollmentsController enroll)
+        {
+            var _enroll = enroll;
+
+            //using stored procedure
+            //The procedure code can be found in the file: ./SQL/PromoteStudents.sql 
+            using (SqlConnection con = new SqlConnection(ConString))
+            using (SqlCommand com = new SqlCommand("PromoteStudents", con))
+            {
+                //preparing stored procedure
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@Studies", request.Studies);
+                com.Parameters.AddWithValue("@Semester", request.Semester);
+
+                con.Open();
+
+                SqlDataReader dr;
+
+                try
+                {
+                    dr = com.ExecuteReader();
+                    var newEnrollment = new EnrollEnrollmentResponse();
+                    if (dr.Read())
+                    {
+                        newEnrollment.IdEnrollment = (int)dr["idEnrollment"];
+                        newEnrollment.Semester = (int)dr["semester"];
+                        newEnrollment.IdStudies = (int)dr["idstudy"];
+                        newEnrollment.StartDate = DateTime.Parse((dr["startDate"].ToString())).ToString("dd.MM.yyyy");
+                    }
+                    dr.Close();
+
+                    return _enroll.Created("", newEnrollment);
+                }
+                catch (SqlException sql)
+                {
+                    return _enroll.NotFound(sql.Message);
+                }
+            }
+        }
+
     }
 }

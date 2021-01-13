@@ -13,5 +13,6 @@ namespace Cw5.Services
         public string GetStudents();
         public string GetStudent(string id);
         public IActionResult AddStudent(EnrollStudentRequest request, EnrollmentsController enroll);
+        public IActionResult Promote(EnrollPromotionRequest request, EnrollmentsController enroll);
     }
 }

@@ -26,10 +26,13 @@ namespace Cw5.Controllers
         [HttpPost]
         public IActionResult EnrollStudent(EnrollStudentRequest request)
         {
-
-            
-
             return _service.AddStudent(request, this);
+        }
+
+        [HttpPost("promotions")]
+        public IActionResult Promote(EnrollPromotionRequest request)
+        {
+            return _service.Promote(request, this);
         }
     }
 }

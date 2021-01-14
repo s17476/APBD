@@ -1,0 +1,97 @@
+﻿{
+  "TimeStamp": "14.01.2021 21:44:21",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 21:45:40",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 21:45:55",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:03:05",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:03:21",
+  "Method": "GET",
+  "Path": "/swagger/swagger/v1/swagger.json",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:04:12",
+  "Method": "GET",
+  "Path": "/swagger/swagger/v1/swagger.json",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:05:32",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:06:03",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:06:28",
+  "Method": "POST",
+  "Path": "/api/enrollments",
+  "Body": "{\u0022indexNumber\u0022:\u0022string\u0022,\u0022firstName\u0022:\u0022string\u0022,\u0022lastName\u0022:\u0022string\u0022,\u0022birthDate\u0022:\u00222021-01-14T21:06:24.201Z\u0022,\u0022studies\u0022:\u0022string\u0022}",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:07:32",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:07:41",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:08:25",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:09:06",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:12:30",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:16:52",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "14.01.2021 22:16:57",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}

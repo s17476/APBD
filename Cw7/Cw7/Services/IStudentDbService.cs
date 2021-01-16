@@ -12,5 +12,7 @@ namespace Cw7.Services
         public EnrollEnrollmentResponse Promote(EnrollPromotionRequest request);
 
         public StudentLoginResponse Login(LoginRequest request);
+        public int AddRefreshToken(string IndexNumber, string newRefToken);
+        public StudentLoginResponse UpdateRefreshToken(string oldRefToken, string newRefToken);
     }
 }

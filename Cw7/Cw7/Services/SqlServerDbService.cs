@@ -255,8 +255,8 @@ namespace Cw7.Services
             {
                 com.Connection = con;
                 com.CommandText = "Select IndexNumber, FirstName " +
-                       "from Student " +
-                       "where IndexNumber=@IndexNumber and Password=@Password";
+                                    "from Student " +
+                                    "where IndexNumber=@IndexNumber and Password=@Password";
                 com.Parameters.AddWithValue("@IndexNumber", request.Login);
                 com.Parameters.AddWithValue("@Password", request.Password);
 
@@ -272,7 +272,73 @@ namespace Cw7.Services
                 }
                 dr.Close();
             }
-            
+            return st;
+        }
+
+        public int AddRefreshToken(string indexNumber, string refToken)
+        {
+            int rows = 0;
+
+            var tokenExpirationDate = DateTime.Now.AddDays(1);
+            using (SqlConnection con = new SqlConnection(ConString))
+            using (SqlCommand com = new SqlCommand())
+            {
+                com.Connection = con;
+                com.CommandText = "UPDATE Student " +
+                                   "SET RefToken=@RefToken, " +
+                                   "TokenExpirationDate=@TokenExpirationDate " +
+                                   "WHERE IndexNumber=@IndexNumber";
+
+                com.Parameters.AddWithValue("@RefToken", refToken);
+                com.Parameters.AddWithValue("@TokenExpirationDate", tokenExpirationDate);
+                com.Parameters.AddWithValue("@IndexNumber", indexNumber);
+
+                con.Open();
+                rows = com.ExecuteNonQuery();
+            }
+            return rows;
+        }
+
+        public StudentLoginResponse UpdateRefreshToken(string oldRefToken, string newRefToken)
+        {
+            StudentLoginResponse st = null;
+
+            using (SqlConnection con = new SqlConnection(ConString))
+            using (SqlCommand com = new SqlCommand())
+            {
+                com.Connection = con;
+                com.CommandText = "UPDATE Student " +
+                                   "SET RefToken=@NewRefToken, " +
+                                   "TokenExpirationDate=@NewTokenExpirationDate " +
+                                   "WHERE RefToken=@OldRefToken AND " +
+                                   "TokenExpirationDate>=@TokenExpirationDate";
+
+                com.Parameters.AddWithValue("@OldRefToken", oldRefToken);
+                com.Parameters.AddWithValue("@NewRefToken", newRefToken);
+                com.Parameters.AddWithValue("@TokenExpirationDate", DateTime.Now);
+                com.Parameters.AddWithValue("@NewTokenExpirationDate", DateTime.Now.AddDays(1));
+
+                con.Open();
+                if(com.ExecuteNonQuery() == 0)
+                {
+                    return st;
+                }
+
+                com.CommandText = "SELECT IndexNumber, FirstName " +
+                                    "FROM Student " +
+                                    "WHERE RefToken=@NewRefToken";
+
+                SqlDataReader dr = com.ExecuteReader();
+                if (dr.Read())
+                {
+                    st = new StudentLoginResponse
+                    {
+                        IndexNumber = dr["IndexNumber"].ToString(),
+                        Name = dr["Firstname"].ToString()
+                    };
+                }
+                dr.Close();
+            }
             return st;
         }
 

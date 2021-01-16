@@ -508,4 +508,916 @@
   "Path": "/api/enrollments/promotions",
   "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
   "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:10:28",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:10:29",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:10:38",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:11:01",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:11:51",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:12:04",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:12:20",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:13:08",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:13:10",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:13:36",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:25:19",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:25:23",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:25:33",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:57:05",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:57:23",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:57:33",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:58:27",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:58:32",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:59:25",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 19:59:29",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:00:00",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:00:05",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:01:07",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:10:22",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:12:35",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:15:25",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/ea0692ba-32f9-49e2-ba31-980f48ec7501",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:17:41",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/ea0692ba-32f9-49e2-ba31-980f48ec7501",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:17:49",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:17:53",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/ea0692ba-32f9-49e2-ba31-980f48ec7501",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:26:23",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:26:30",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/ea0692ba-32f9-49e2-ba31-980f48ec7501",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:27:08",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:27:55",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/82a80809-2ca5-43e1-82f9-0f515dca38ac",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:38:28",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:38:35",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/82a80809-2ca5-43e1-82f9-0f515dca38ac",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:38:45",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:38:59",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/8360ea25-95f8-4f96-9066-fb3ed28f6215",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:39:27",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/8360ea25-95f8-4f96-9066-fb3ed28f6215",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:39:55",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:40:14",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/3ce069e9-4a2b-4968-b010-0d580210e7b3",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:43:30",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:43:44",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:44:21",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/b7f48010-3144-445a-bc72-77170bdc13dd",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:50:51",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:51:11",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:51:43",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/e437b164-e3b4-4e96-b26a-7a70979e610c",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:54:26",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:54:33",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:54:57",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/e37738db-ce52-47b0-98db-f93c22f4b359",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:55:48",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:55:53",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:56:21",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/6b7616f3-2105-4fc7-9ca7-070de357c392",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:59:43",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 20:59:49",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:00:02",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:00:22",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/e2927cac-d4ee-45e1-8477-09e9d4fdaa4d",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:00:40",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/05ed96f8-cd99-4b5b-8da0-3f190a8c6558",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:15:56",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:16:01",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:16:26",
+  "Method": "POST",
+  "Path": "/api/students/3168c465-cd82-481b-a168-bb26e3b10097",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:16:53",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:16:59",
+  "Method": "POST",
+  "Path": "/api/students/3168c465-cd82-481b-a168-bb26e3b10097",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:17:11",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:17:24",
+  "Method": "POST",
+  "Path": "/api/students/3168c465-cd82-481b-a168-bb26e3b10097",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:17:47",
+  "Method": "POST",
+  "Path": "/api/students/e7f6b7a8-7ee1-4570-8577-0584e37721fc",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:18:01",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:18:08",
+  "Method": "POST",
+  "Path": "/api/students/e7f6b7a8-7ee1-4570-",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:21:48",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:21:57",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:22:43",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/bcc88acc-33b3-4a25-9630-0563e3132b59",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:22:53",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/bcc88acc-33b3-4a25-9630-0563e3132b",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:22:57",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/bcc88acc-33b3-4a25-9630-0563e3132b59",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:26:07",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:26:11",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:26:37",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/f8a12b97-9b95-4a6c-8b1a-9266f844381f",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:26:57",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:27:03",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/f8a12b97-9b95-4a6c-8b1a-9266f844381f",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:30:44",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:30:52",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:31:17",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/9b65e0fb-4e4f-4504-a1a0-bc996b7bebce",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:32:26",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:32:31",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:32:54",
+  "Method": "POST",
+  "Path": "/api/students/refrest-token/1b6ce75f-c0ba-40e5-b6be-fb4f88b12dc9",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:33:11",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/1b6ce75f-c0ba-40e5-b6be-fb4f88b12dc9",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:33:51",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:34:03",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:34:27",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/55544a42-0277-4615-84b9-3ca28e5463fd",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:35:24",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/6041a98c-e517-4e65-af93-4104b01f2baf",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:35:50",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/66ca54c4-b718-4106-b7ae-d91b26a68f80",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:36:53",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:37:04",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:37:26",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/0c9eb73f-6cfb-4577-8566-a62036a52c1a",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:49:52",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:49:57",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 21:50:18",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/6b272563-de46-4ac5-8792-fa29c9a74daa",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:02:48",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:02:53",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:03:19",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/6fdaee36-71e6-4d81-a4d6-59e7f0071042",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:04:34",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:04:51",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:05:14",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/3b23c7c9-8046-439f-bf2d-52cc39f189a9",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:11:27",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:11:39",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:12:00",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/2c1f95e0-e555-430d-a72d-066118bde2db",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:13:37",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:13:58",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/2a6a8ef8-a840-4d04-8e8d-6946222fe10d",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:14:14",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/2a6a8ef8-a840-4d04-8e8d-6946222fe10d",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:15:06",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:16:09",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/a559e847-6a77-4d80-8b35-9790921e510e",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:17:42",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:17:51",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:18:03",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/201f9ffc-2d99-4362-a0a4-d5276a39eaa7",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:18:24",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/17aa82af-566a-4546-ae30-95bcc9d7f0a9",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:18:40",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:18:51",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/d2a3ef63-34f6-441f-803c-7c98e98e3f2c",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:21:49",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:21:55",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:22:09",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/b9b96708-a991-4fda-aeea-b2a377964b36",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:22:38",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:23:17",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/fbbc8dd1-0911-49f9-b0d8-0e4785997ad6",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:23:50",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:23:56",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:24:18",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/056d8708-71db-4c27-8003-299cc6ce4ee9",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:24:57",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:25:11",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:25:38",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/f3096767-4bb6-4f07-accf-84c14b8392b9",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:27:15",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:27:22",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:27:39",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/97f2c726-f267-432b-bafd-17ee7f8e1caf",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:29:27",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:29:34",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:29:39",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:29:59",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/568d25f5-55e6-475c-aa63-ae5d0eb91b35",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:33:39",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:33:44",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:34:03",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/a3728369-9634-4d69-84c4-3ce16806b07f",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:34:09",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/a3728369-9634-4d69-84c4-3ce16806b07f",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:34:30",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/95128b6f-1c85-4c03-9685-64e53ab91c7b",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:35:54",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:36:00",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:36:23",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/e0a90e76-88a8-4b7c-a964-78643196e789",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:37:13",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:37:15",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/e0a90e76-88a8-4b7c-a964-78643196e789",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:37:26",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:37:43",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/51a34131-fbc0-49a5-81c2-ed1c3c44bba5",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:38:56",
+  "Method": "GET",
+  "Path": "/api/students",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:39:01",
+  "Method": "POST",
+  "Path": "/api/students",
+  "Body": "{\r\n    \u0022login\u0022: \u0022s1234\u0022,\r\n    \u0022password\u0022: \u00221234\u0022\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:39:16",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/7b248759-94ed-4054-9ffe-075754e32e08",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:39:32",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/9b035fc5-76b1-41b4-9cc7-d119ad050d24",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:39:44",
+  "Method": "POST",
+  "Path": "/api/students/refresh-token/9e4d1f45-eb62-42b5-8841-0b91cc0b5b25",
+  "Body": "",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:40:10",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
+}{
+  "TimeStamp": "16.01.2021 22:40:17",
+  "Method": "POST",
+  "Path": "/api/enrollments/promotions",
+  "Body": "{\r\n\u0022Studies\u0022: \u0022Informatyka\u0022,\r\n\u0022Semester\u0022: 1\r\n}",
+  "QueryString": ""
 }

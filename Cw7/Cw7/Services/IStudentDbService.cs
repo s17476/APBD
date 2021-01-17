@@ -8,7 +8,7 @@ namespace Cw7.Services
     {
         public string GetStudents();
         public string GetStudent(string id);
-        public EnrollEnrollmentResponse AddStudent(EnrollStudentRequest request);
+        public EnrollEnrollmentResponse AddStudent(EnrollStudentRequest request, IPasswordHashingService pswdService);
         public EnrollEnrollmentResponse Promote(EnrollPromotionRequest request);
 
         public StudentLoginResponse Login(LoginRequest request);

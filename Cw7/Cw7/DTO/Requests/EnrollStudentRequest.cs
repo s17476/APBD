@@ -19,6 +19,9 @@ namespace Cw7.DTO.Requests
         public DateTime? BirthDate { get; set; }
         [Required]
         public string Studies { get; set; }
+        [Required]
+        [MinLength(8)]
+        public string Password { get; set; }
 
     }
 }

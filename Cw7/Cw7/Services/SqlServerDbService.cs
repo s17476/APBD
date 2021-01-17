@@ -100,7 +100,7 @@ namespace Cw7.Services
         }
 
         // add new student
-        public EnrollEnrollmentResponse AddStudent(EnrollStudentRequest request)
+        public EnrollEnrollmentResponse AddStudent(EnrollStudentRequest request, IPasswordHashingService pswdService)
         {
 
             using (SqlConnection con = new SqlConnection(ConString))
@@ -174,13 +174,19 @@ namespace Cw7.Services
                     }
                     dr.Close();
 
+                    //generate password
+                    var salt = pswdService.CreateSalt();
+                    var password = pswdService.HashPassword(request.Password, salt);
+
                     //add new student
-                    com.CommandText = "insert into student (IndexNumber, FirstName, LastName, BirthDate, IdEnrollment) " +
-                        "values (@IndexNumber, @FirstName, @LastName, @BirthDate, @idEnroll)";
+                    com.CommandText = "insert into student (IndexNumber, FirstName, LastName, BirthDate, IdEnrollment, Password, Salt) " +
+                        "values (@IndexNumber, @FirstName, @LastName, @BirthDate, @idEnroll, @Password, @Salt)";
                     com.Parameters.AddWithValue("idEnroll", idEnrollment);
                     com.Parameters.AddWithValue("FirstName", request.FirstName);
                     com.Parameters.AddWithValue("LastName", request.LastName);
                     com.Parameters.AddWithValue("BirthDate", request.BirthDate);
+                    com.Parameters.AddWithValue("@Password", password);
+                    com.Parameters.AddWithValue("@Salt", salt);
                     com.ExecuteNonQuery();
 
                     //get enrollment from DB
@@ -254,11 +260,10 @@ namespace Cw7.Services
             using (SqlCommand com = new SqlCommand())
             {
                 com.Connection = con;
-                com.CommandText = "Select IndexNumber, FirstName " +
+                com.CommandText = "Select IndexNumber, FirstName, Password, Salt " +
                                     "from Student " +
-                                    "where IndexNumber=@IndexNumber and Password=@Password";
+                                    "where IndexNumber=@IndexNumber";
                 com.Parameters.AddWithValue("@IndexNumber", request.Login);
-                com.Parameters.AddWithValue("@Password", request.Password);
 
                 con.Open();
                 SqlDataReader dr = com.ExecuteReader();
@@ -267,7 +272,9 @@ namespace Cw7.Services
                     st = new StudentLoginResponse
                     {
                         IndexNumber = dr["IndexNumber"].ToString(),
-                        Name = dr["Firstname"].ToString()
+                        Name = dr["Firstname"].ToString(),
+                        Password = dr["Password"].ToString(),
+                        Salt = dr["Salt"].ToString()
                     };
                 }
                 dr.Close();

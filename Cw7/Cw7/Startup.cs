@@ -27,7 +27,8 @@ namespace Cw7
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IStudentDbService, SqlServerDbService>();
-            services.AddScoped<ILoggerService, IFileLoggerService>();
+            services.AddScoped<ILoggerService, FileLoggerService>();
+            services.AddScoped<IPasswordHashingService, Pbkdf2HashingService>();
             services.AddControllers();
             services.AddSwaggerGen(config =>
             {

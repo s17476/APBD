@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace Cw7.Services
 {
-    public class IFileLoggerService : ILoggerService
+    public class FileLoggerService : ILoggerService
     {
         private readonly string logFile = "log.json";
         public void Log(Log log)

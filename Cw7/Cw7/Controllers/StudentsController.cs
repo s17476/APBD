@@ -1,12 +1,10 @@
 ﻿using Cw7.DTO.Requests;
 using Cw7.DTO.Responses;
 using Cw7.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -19,14 +17,15 @@ namespace Cw7.Controllers
     {
         private IStudentDbService _service;
         public IConfiguration Configuration { get; set; }
+        private IPasswordHashingService _pswdService;
 
-        public StudentsController(IStudentDbService DbService, IConfiguration configuration)
+        public StudentsController(IStudentDbService DbService, IConfiguration configuration, IPasswordHashingService pswdService)
         {
             _service = DbService;
             Configuration = configuration;
+            _pswdService = pswdService;
         }
 
-        [Authorize]
         [HttpGet]
         public IActionResult GetStudents()
         {
@@ -46,8 +45,13 @@ namespace Cw7.Controllers
 
             if(slr == null)
             {
-                return NotFound("Incorrect login or password");
+                return NotFound("Incorrect login");
             }
+
+            if (!_pswdService.Validate(request.Password, slr.Salt.Trim(), slr.Password.Trim()))
+            {
+                return ValidationProblem("Incorrect password");
+            };
 
             var claims = new[]
             {

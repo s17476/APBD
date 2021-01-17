@@ -10,17 +10,19 @@ namespace Cw7.Controllers
     public class EnrollmentsController : ControllerBase
     {
         private IStudentDbService _service;
+        private IPasswordHashingService _pswdService;
 
-        public EnrollmentsController(IStudentDbService DbService)
+        public EnrollmentsController(IStudentDbService DbService, IPasswordHashingService pswdService)
         {
             _service = DbService;
+            _pswdService = pswdService;
         }
 
         [Authorize(Roles ="Employee")]
         [HttpPost]
         public IActionResult EnrollStudent(EnrollStudentRequest request)
         {
-            return Created("", _service.AddStudent(request));
+            return Created("", _service.AddStudent(request, _pswdService));
         }
 
         [Authorize(Roles ="Employee")]

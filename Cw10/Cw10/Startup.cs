@@ -30,8 +30,6 @@ namespace Cw10
 
             services.AddDbContext<s17476Context>(
                 options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
-
-            services.AddScoped<DbContext, s17476Context>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

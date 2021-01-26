@@ -27,7 +27,9 @@ namespace Cw10.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=FRONCZ\\SQLEXPRESS;Initial Catalog=s17476;Integrated Security=True");
+                optionsBuilder
+                    .UseSqlServer("Data Source=FRONCZ\\SQLEXPRESS;Initial Catalog=s17476;Integrated Security=True")
+                    .UseLazyLoadingProxies();
             }
         }
 

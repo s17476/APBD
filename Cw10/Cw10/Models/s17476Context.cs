@@ -49,6 +49,8 @@ namespace Cw10.Models
                     .HasForeignKey(d => d.IdStudy)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("Enrollment_Studies");
+
+
             });
 
             modelBuilder.Entity<Student>(entity =>

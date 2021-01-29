@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cw11.DTO.Request
 {
-    public class DoctorDtoRequest
+    public class DoctorAddRequestDto
     {
         [Required]
         [MaxLength(100)]
